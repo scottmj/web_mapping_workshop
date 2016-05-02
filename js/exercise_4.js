@@ -93,7 +93,7 @@ function getDirections(frm, to){
       	units: 'miles'
     })
     $.ajax({
-    	url: 'http://valhalla.mapzen.com/routes',
+    	url: 'https://valhalla.mapzen.com/routes',
       	data: {
         	json: jsonPayload,
           	api_key: 'valhalla-gwtf3x2' //will only work during conf, register with mapzen to get my own
