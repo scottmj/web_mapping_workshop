@@ -37,7 +37,7 @@ featureLayer.on('ready', function(){
 
 featureLayer.on('ready', function(){
 	this.eachLayer(function(layer){
-    	layer.bindPopup(layer.feature.properties.name, layer.feature.properties.addr:city)
+    	layer.bindPopup(layer.feature.properties.name + layer.feature.properties.addr:city)
     })
 })
 
