@@ -35,3 +35,8 @@ featureLayer.on('ready', function(){
     map.fitBounds(featureLayer.getBounds());
     
 })
+
+var tooltip = new mapboxgl.Popup({closeOnClick: false})
+    .setLngLat([-96, 37.8])
+    .setHTML('<h1>Hello World!</h1>')
+    .addTo(map);
