@@ -67,13 +67,13 @@ map.on('locationfound'), function(e){
 	myLocation.setGeoJSON({
     	type: 'Feature',
       	geometry: {
-        	type: 'point',
-          	coordinates: [e.latlng.lng, e.latlng.lat]
+        	type: 'Point',
+          	coordinates: [ e.latlng.lng, e.latlng.lat ]
         },
       	properties: {
         	"title": "Here I am!",
       		"marker-color": "#ff8888",
-      		"marker-symbol": "start"
+      		"marker-symbol": "star"
         }
     })
 })
