@@ -35,11 +35,32 @@ featureLayer.on('ready', function(){
     map.fitBounds(featureLayer.getBounds()); 
 })
 
+var clickHandler = function(e){
+	$('#info').empty();
+  	var feature = e.target.feature;
+  	$('#sidebar').fadeIn(400, function(){
+    	var info = '';
+      	info += '<div>';
+      	info += 'h2' + features.properties.name + '<h2>';
+      	if(feature.properties.cuisine) info += '<p>' + feature.properties.cuisine + '<p>';
+      	if(feature.properties.phone) info += '<p>' + feature.properties.phone + '<p>';
+      	if(feature.properties.website) info += '<p><a href="' + feature.properties.website + '">' + feature.properties.website + '</a><p>';
+      	info += '</div>';
+    
+    $('info').apped(info);
+    });
+}
+
 featureLayer.on('ready', function(){
 	this.eachLayer(function(layer){
-    	layer.bindPopup(layer.feature.properties.name)
+      	layer.on('click', clickHandler);
     })
 })
+//featureLayer.on('ready', function(){
+//	this.eachLayer(function(layer){
+//    	layer.bindPopup(layer.feature.properties.name)
+//    })
+//})
 
 
 //"addr:city": "Durham",
