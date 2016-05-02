@@ -77,7 +77,7 @@ map.on('locationfound', function(e){
       		"marker-symbol": "star"
         }
     })
-}
+})
 
 map.locate({setView: true})
 
