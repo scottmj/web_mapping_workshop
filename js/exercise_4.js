@@ -56,6 +56,11 @@ featureLayer.on('ready', function(){
       	layer.on('click', clickHandler);
     })
 })
+
+map.on('click', function(){
+	$('sidebar').fadeOut(200);
+}
+
 //featureLayer.on('ready', function(){
 //	this.eachLayer(function(layer){
 //    	layer.bindPopup(layer.feature.properties.name)
