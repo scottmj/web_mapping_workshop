@@ -18,7 +18,6 @@ map.setView([39, -96], 5);
 // Great, now we have a basic web map!
 
 //added during class=================
-
 var dataFileToAdd = 'data/restaurants.geojson'; //access datafile
 var featureLayer = L.mapbox.featureLayer(); //create data layer in map
 	featureLayer.loadURL(dataFileToAdd); //add datafile to data layer
@@ -76,7 +75,7 @@ map.on('locationfound'), function(e){
       		"marker-symbol": "star"
         }
     })
-}
+})
 
 map.locate({setView: true})
 
@@ -87,11 +86,3 @@ map.locate({setView: true})
 //    })
 //})
 
-
-//"addr:city": "Durham",
-  //      "addr:country": "US",
-    //    "addr:housenumber": "742",
-      //  "addr:postcode": "27705",
-        //"addr:state": "North Carolina",
-        //"addr:street": "9th Street",
-        //"amenity": "restaurant",
