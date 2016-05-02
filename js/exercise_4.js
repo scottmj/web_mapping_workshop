@@ -21,7 +21,7 @@ map.setView([39, -96], 5);
 
 var dataFileToAdd = 'data/restaurants.geojson'; //access datafile
 var featureLayer = L.mapbox.featureLayer(); //create data layer in map
-	featureLayer.loadURL(dateFileToAdd); //add datafile to data layer
+	featureLayer.loadURL(dataFileToAdd); //add datafile to data layer
 	featureLayer.addTo(map); //add data layer to the map
 
 featureLayer.on('ready', function(){
