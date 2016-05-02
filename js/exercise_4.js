@@ -36,6 +36,9 @@ featureLayer.on('ready', function(){
     
 })
 
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.css' rel='stylesheet' />
+
 var tooltip = new mapboxgl.Popup({closeOnClick: false})
     .setLngLat([-96, 37.8])
     .setHTML('<h1>Hello World!</h1>')
