@@ -37,7 +37,15 @@ featureLayer.on('ready', function(){
 
 featureLayer.on('ready', function(){
 	this.eachLayer(function(layer){
-    	layer.bindPopup('Welcome to ' + layer.feature.properties.name)
+    	layer.bindPopup(layer.feature.properties.name, layer.feature.properties.addr:city)
     })
 })
 
+
+//"addr:city": "Durham",
+  //      "addr:country": "US",
+    //    "addr:housenumber": "742",
+      //  "addr:postcode": "27705",
+        //"addr:state": "North Carolina",
+        //"addr:street": "9th Street",
+        //"amenity": "restaurant",
