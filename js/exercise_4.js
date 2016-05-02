@@ -118,7 +118,7 @@ function getDirections(frm, to){
         	$('#summary').empty();
             $('#distance').text((Math.round(summary.length * 100)/100) + data.trip.units);
           	$('#time').text((Math.round(summary.time / 60 * 100) /100) + 'min');
-        }
+        })
     })
 }
 
